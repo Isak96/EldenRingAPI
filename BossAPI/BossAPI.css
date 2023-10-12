@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+#home-button a {
+    text-decoration: none;
+    color: white;
+    background-color: #3498db;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#content {
+    padding: 100px 30px;
+}
