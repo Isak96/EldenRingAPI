@@ -1,7 +1,61 @@
-div h1 {
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+    margin: 0;
+    padding: 0;
+    background: url('https://images2.alphacoders.com/129/1291883.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+#hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: rgb(206, 175, 2);
+    margin: 4px 0;
+}
+
+#headline {
+    
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateX(0%);
+    transform: translateY(-30%);
+}
+
+#headline {
+    position: absolute;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#headline img {
+    width: 180px;
+}
+
+#text-next-to-hamburger {
+    font-size: 24px;
+    color: rgb(158, 131, 41);
+    position: absolute;
+    left: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+}
