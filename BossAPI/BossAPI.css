@@ -30,3 +30,32 @@ header {
 #content {
     padding: 100px 30px;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .boss-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .boss-card img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .boss-card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .boss-card p {
+    margin: 5px 0;
+  }
+  
+  .boss-card .regions {
+    font-style: italic;
+  }
