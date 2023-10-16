@@ -1,32 +1,26 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: url('https://cdn.discordapp.com/attachments/1143466306629271553/1161950923585753098/5S8Ipw6-gigapixel-art-scale-2_00x.jpeg?ex=653a2a20&is=6527b520&hm=4c1e2164546960f21b36b2b9ad34ac148870480ea7f472c9ef1442a58e1732ef&') no-repeat center center fixed;
-    background-size: cover;
-    font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background: url('https://cdn.discordapp.com/attachments/1143466306629271553/1161950923585753098/5S8Ipw6-gigapixel-art-scale-2_00x.jpeg?ex=653a2a20&is=6527b520&hm=4c1e2164546960f21b36b2b9ad34ac148870480ea7f472c9ef1442a58e1732ef&') no-repeat center center fixed;
+background-size: cover;
+font-family: 'Cinzel', serif;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 30px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 2;
+body h1 {
+display: flex;
+justify-content: center;
+align-items: center;
+color: rgb(206, 175, 2);
 }
 
-#home-button a {
-    text-decoration: none;
-    color: white;
-    background-color: #3498db;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+.api-button {
+padding: 10px 20px;
+font-size: 16px;
+transition: transform 0.2s ease;
+margin-right: 50px;
+background-color: rgb(206, 175, 2);
 }
 
-#content {
-    padding: 100px 30px;
+.api-button:hover {
+transform: scale(1.1);
 }
