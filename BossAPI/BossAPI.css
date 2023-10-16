@@ -25,26 +25,30 @@ body {
   transform: scale(1.1);
   }
 
-  .boss-card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
+  .bossCard {
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+	 width: 50%;
+	 text-align: center;
+	 border-radius: 16px;
+	 overflow: hidden;
+   
   }
 
-  .boss-card img {
+  .bossCard img {
     max-width: 100px;
     height: auto;
   }
 
-  .boss-card h2 {
+  .bossCard h2 {
     font-size: 18px;
     margin: 10px 0;
   }
 
-  .boss-card p {
+  .bossCard p {
     margin: 5px 0;
   }
 
-  .boss-card .regions {
+  .bossCard.region {
     font-style: italic;
   }
+
