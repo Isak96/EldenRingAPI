@@ -26,12 +26,16 @@ body {
   }
 
   .bossCard {
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-	 width: 50%;
-	 text-align: center;
-	 border-radius: 16px;
-	 overflow: hidden;
-   
+    width: 150px;
+    border: 5px solid rgb(206, 175, 2);
+    padding: 150px 35px;
+    margin: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 20px;
+    outline: 1px;
+    box-sizing: 20px;
+    
   }
 
   .bossCard img {

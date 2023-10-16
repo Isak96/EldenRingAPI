@@ -25,7 +25,7 @@ async function createBossCards() {
         return;
     }
 
-    bossData.forEach((boss) => {
+    bossData.map((boss) => {
         const bossCard = document.createElement("div");
         bossCard.classList.add("boss-card"); // You can define CSS styles for boss cards.
 
@@ -43,7 +43,7 @@ async function createBossCards() {
         `;
 
         // Append the card to the container.
-        bossCardsContainer.appendChild(bossCard);
+        ;
     });
 
     // Log a message indicating that boss data retrieval and card creation are complete.
