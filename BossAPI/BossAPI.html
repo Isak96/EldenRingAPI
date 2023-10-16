@@ -8,18 +8,32 @@
     <script src="BossAPI.js" defer></script>
 </head>
 <body>
+    <h1>Elden Ring Boss API</h1>
+    <button id="apiButton" class="api-button">Open Elden Ring API</button>
+    <p id="boss-text"></p>
 
-    <div id="bosses-container"></div>
-
-    <script src="BossAPI.js"></script>
-    
-    <header>
-        <button id="home-button"><a href="#">Homepage</a></button>
-        !!!!FINN UT HVORDAN FAEN MAN LINKER TILBAKE TIL ORGINALE HTML!!!
-    </header>
-
-    <div id="content">
-        <p>Insert Boss API Here Somehow..</p>
+.map(
+<!-- (boss) => 
+    <div class="boss-container">
+        <div class="boss-text">
+            <h2>${boss.name}</h2>
+            <p>Region: ${boss.region}</p>
+            <p>Description: ${boss.description}</p>
+            <p>Location: ${boss.location}</p>
+            <ul>
+                ${boss.drops.map((drop) => <li>${drop}</li>).join("")}
+            </ul>
+            <p>Health Points: ${boss.healthPoints}</p>
+        </div>
+        <div class="boss-image">
+            ${boss.image
+    ? <img src="${boss.image}" alt="${boss.name}">
+    : ""
+    }
     </div>
+</div>
+   
+)
+.join(""); -->
 </body>
 </html>
