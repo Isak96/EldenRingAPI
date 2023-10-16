@@ -31,7 +31,7 @@ body {
     padding: 150px 35px;
     margin: 100px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-row: 1 / 3;
     grid-gap: 20px;
     outline: 1px;
     box-sizing: 20px;
