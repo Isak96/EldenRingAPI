@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Elden Ring Info</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="bosses.script.js"refer></script>
 </head>
 <body>
+    <div class="circle"></div>
     
-    <div class="eldenringtext">
-        <h1>ELDEN RING HERE</h1>
-    </div>
-    
-    <div class="image">
-        <img src="img/eldenring-wallpaper.png" alt="">
-    </div>
-    
+    <svg>
+        <filter id="wavy">
+            <feTurbulence x="0" y="0" baseFrequency="0.009" numOctaves="5" seed="2">
+                <animate attributeName="baseFrequency" dur="60s" values="0.02;0.05;0" repeatCount="indefinite">
+            </feTurbulence>
+            <feDisplacementMap in="SourceGraphic" scale="30">
+        </filter>
+    </svg>
+  
+    <script src="script.js"></script>
+
+  
 
 </body>
 </html>
