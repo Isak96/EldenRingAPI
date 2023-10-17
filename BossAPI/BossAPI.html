@@ -8,15 +8,15 @@
     <script src="BossAPI.js" defer></script>
 </head>
 <body>
+    
     <h1>Elden Ring Boss API</h1>
     <button id="apiButton" class="api-button">Open Elden Ring API</button>
     <p id="boss-text"></p>
 
-    <div class="bossCard"></div>
-    <div clas="bossCardsContainer"></div>
+    <div id="bossCards"></div>
 
 .map(
-<!-- (boss) => 
+(boss) => 
     <div class="boss-container">
         <div class="boss-text">
             <h2>${boss.name}</h2>
@@ -35,8 +35,8 @@
     }
     </div>
 </div>
-   
 )
-.join(""); -->
+.join("");
+
 </body>
 </html>
