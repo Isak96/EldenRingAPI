@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <h1>Elden Ring Boss API</h1>
+    <h1>Elden Ring Bosses</h1>
     <p id="boss-text"></p>
     <div id="bossCards"></div>
 
@@ -22,12 +22,12 @@
             <p>Description: ${boss.description}</p>
             <p>Location: ${boss.location}</p>
             <ul>
-                ${boss.drops.map((drop) => <li>${drop}</li>).join("")}
+            ${boss.drops.map((drop) => <li>${drop}</li>).join("")}
             </ul>
             <p>Health Points: ${boss.healthPoints}</p>
         </div>
         <div class="boss-image">
-            ${boss.image
+        ${boss.image
     ? <img src="${boss.image}" alt="${boss.name}">
     : ""
     }
