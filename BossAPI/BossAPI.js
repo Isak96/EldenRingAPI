@@ -3,24 +3,25 @@ let url = `https://eldenring.fanapis.com/api/bosses?limit=${limit}`;
 
 async function getData() {
 try {
-    let response = await fetch(url);
+let response = await fetch(url);
 if (!response.ok) {
 throw new Error(`Failed to fetch data: ${response.statusText}`);
 }
-    let json = await response.json();
-    console.log(json.data)
+
+let json = await response.json();
+console.log(json.data)
 return json.data;
 } 
+
 catch (error) {
-    console.error(error);
-}
+console.error(error);
+    }
 }
 
 const bossCardsContainer = document.getElementById("bossCards");
 
 async function createBossCards() {
 const bossData = await getData();
-
 if (!bossData) {
 return;
 }
@@ -44,7 +45,8 @@ bossCard.innerHTML = `
 `;
 
 bossCardsContainer.appendChild(bossCard);
-});
+    }
+  );
 }
 
 createBossCards();
