@@ -17,18 +17,7 @@
 (boss) => 
     <div class="boss-container">
         <div class="boss-text">
-            <h2>${boss.name}</h2>
-            <p>Region: ${boss.region}</p>
-            <p>Description: ${boss.description}</p>
-            <p>Location: ${boss.location}</p>
-            <ul>
-            ${boss.drops.map((drop) => <li>${drop}</li>).join("")}
-            </ul>
-            <p>Health Points: ${boss.healthPoints}</p>
-        </div>
-        <div class="boss-image">
-        ${boss.image
-    ? <img src="${boss.image}" alt="${boss.name}">
+      
     : ""
     }
     </div>
