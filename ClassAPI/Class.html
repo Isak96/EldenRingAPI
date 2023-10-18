@@ -11,27 +11,15 @@
     
 <h1>Elden Ring Classes</h1>
 <p id="classes-text"></p>
-<div id="classesCards"></div>
+<div id="classes-card"></div>
 
-.map(
-(classes) => 
+
     <div class="classes-container">
         <div class="classes-text">
-            <h2>${classes.name}</h2>
-            <p>Description: ${classes.description}</p>
-            <p>Stats: ${classes.stats}</p>
-
-
-        </div>
-        <div class="classes-image">
-            ${boss.image
-    ? <img src="${classes.image}" alt="${classes.name}">
-    : ""
-    }
+        
     </div>
 </div>
-)
-.join("");
+
 
 </body>
 </html>
