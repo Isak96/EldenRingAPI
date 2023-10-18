@@ -18,7 +18,7 @@ console.error(error);
     }
 }
 
-const classCardsContainer = document.getElementById("classesCards");
+const classesCardsContainer = document.getElementById("classesCards");
 
 async function createclassesCards() {
 const classesData = await getData();
@@ -31,20 +31,17 @@ const classesCard = document.createElement("div");
 classesCard.classList.add("classes-container");
 classesCard.innerHTML = `
     <div class="classes-image">
-    <img src="${classes.image ? classes.image: "https://user-images.githubusercontent.com/88409867/128100295-6da3345d-e5b3-472f-9d37-9b849c21f810.png"}" alt="${boss.name}">
+    <img src="${classes.image ? classes.image: "https://user-images.githubusercontent.com/88409867/128100295-6da3345d-e5b3-472f-9d37-9b849c21f810.png"}" alt="${classes.name}">
     </div>
     <h2>${classes.name}</h2>
     <p><strong>Description:</strong> ${classes.description}</p>
     <p><strong>Stats:</strong> ${classes.stats}</p>
-    <p><strong>Location:</strong> ${boss.location}</p>
-    <p><strong>Drops:</strong></p>
-    <ul>
-    ${boss.drops.map((drop) => `<li>${drop}</li>`).join("")}
-    </ul>
-    <p><strong>Health Points:</strong> ${boss.healthPoints}</p>
+    
+    
+    
 `;
 
-classesCardsContainer.appendChild(ClassesCard);
+classesCardsContainer.appendChild(classesCard);
     }
   );
 }
