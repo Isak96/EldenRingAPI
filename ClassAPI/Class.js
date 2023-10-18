@@ -28,7 +28,7 @@ return;
 
 classesData.map((classes) => {
 const classesCard = document.createElement("div");
-classesCard.classList.add("class-card");
+classesCard.classList.add("classes-container");
 classesCard.innerHTML = `
     <div class="classes-image">
     <img src="${classes.image ? classes.image: "https://user-images.githubusercontent.com/88409867/128100295-6da3345d-e5b3-472f-9d37-9b849c21f810.png"}" alt="${boss.name}">

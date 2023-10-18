@@ -13,13 +13,13 @@ align-items: center;
 color: rgb(206, 175, 2);
 }
 
-#ClassesCards {
+#classesCards {
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 }
 
-.classes-card {
+.classesCards {
 width: calc(25% - 20px);
 margin: 20px;
 padding: 10px;
@@ -30,7 +30,7 @@ transition: transform 0.2s, opacity 0.2s, background-color 0.2s;
 opacity: 0.9;
 }
 
-.classes-card:hover {
+.classesCards:hover {
 transform: scale(1.1);
 background-color: rgb(206, 175, 2);
 opacity: 1;

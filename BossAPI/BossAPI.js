@@ -44,7 +44,7 @@ bossCard.innerHTML = `
     <p><strong>Health Points:</strong> ${boss.healthPoints}</p>
 `;
 
-classCardsContainer.appendChild(bossCard);
+bossCardsContainer.appendChild(bossCard);
     }
   );
 }
